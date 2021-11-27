@@ -1,0 +1,175 @@
+/*Pacific Trails Resort
+  Anisia Whiting
+  CIS 133DA Section 26860
+  September 25, 2017*/
+*{ box-sizing: border-box;}
+/*The body changes the background color, the text color and the font color*/
+body { background-image: url(beige.jpg);
+	background-size: 100% 100%;
+	background-color:#FFFFFF;
+	color: #666666;
+    font-family: Veranda,Arial,sans-serif;
+	}
+/*this is the display, color, font-family and background-repeat for the header section*/
+header{ display: block;
+	background-color:#000033;
+	color: #FFFFFF;
+	font-family: Georgia,sans-serif; 
+	background-repeat: no-repeat;
+}
+/*this is the background-image, background-position, background-repeat, padding-left, height, background-color, margin-bottom, 
+	color,line-height, font-family for section h1*/
+h1 { background-image: url(logo2.jpg);
+	background-position: right;
+	text-align: center;
+	background-repeat: no-repeat;
+	padding-top: 36px;
+	height: 72px;
+	background-color: #000033;
+	margin-bottom: 0;
+	color: #FFFFFF;
+    line-height: 9%; 
+	font-family: Algerian,Arial,sans-serif; 
+	font-size: 44px; }
+/*this is the color, padding, and font-family for h2*/
+h2 { color: #3399CC;
+	padding: 5px;
+    font-family: Georgia,sans-serif; }
+/*this is the diplay text-color for h3*/
+h3 { color: #000033; }
+/* These are the specificatios for the navigating portion of the web page. There are subject to change*/
+nav { height: 36px;
+	font-weight: bold;
+	padding-top: 9px;	
+	padding-left: 100px;
+	background-color: #90C7E3;
+}	
+/*the id wrapper centered the document going from left to right.*/
+#wrapper { background-image: url(background.jpg);
+	min-width: 700px; 
+	max-width: 1024px;
+	box-shadow: 3px 3px 3px #333; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+/*These are the specification for the navigating unordered list*/
+nav ul { list-style-type: none; 
+		float: 150px; 
+		margin: 0px; 
+		padding-left: 0px; }
+/*The following are the specifications for the alt attributes of the nav element*/		
+nav a { text-decoration: none; }
+nav a:link { color: #000033; }
+nav a:visited { color: #344873; }
+nav a:hover { color: #ffffff; }
+/*The following are the specifications for the discription tag*/ 
+dt{ color: #000033;
+	font-weight: bold; }
+.painting{ font-weight: bold;
+	color: #000033;
+	font-size: 1.2em;}
+/* The following are the specifications for the footer*/
+footer { margin-left: 0px;
+		font-size: .70em;
+		font-style: italic;
+		text-align: center;
+		padding: 10px; 
+		background-color: #FFFFFF;
+		display: block;
+}
+/*The following id the speifications for the main section of the web page*/
+main { background-color: #ffffff;
+	margin-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 20px;
+	padding-right: 20px;  
+}
+/*The id homehero identifies the placement and positioning of the Image (coast.jpg)*/
+#homehero { height: 400px;
+	background-image: url(fountainhills.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+margin-left: 0px; }
+/*The id interiorhero identifies the placement and positioning of the Image (aqua.jpg)*/
+#interiorhero { height: 400px;
+	background-image: url(aqua.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+margin-left: 0px; }
+/*The id exteriorhero identifies the placement and positioning of the Image (scottsdale2.jpg)*/
+#exteriorhero { height: 400px;
+	background-image: url(scottsdale2.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 0px; }
+/*The id restorationhero identifies the placement and positioning of the Image (waterdamage.jpg)*/
+#restorationhero { height: 400px;
+	background-image: url(waterdamage.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 0px;	}
+/*The id roofinghero identifies the placement and positioning of the Image (roofing.jpg)*/
+#roofinghero { height: 400px;
+	background-image: url(roofrepair.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 0px;	}
+/*The id contacthero identifies the placement and positioning of the Image (classicshadeslogo2.jpg)*/
+#contacthero { height:300px;
+	background-image: url(classicshadeslogo2.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 0px;	}
+/*Configure the CSS for the Phone Number so it only displays one number*/
+#mobile { display: none; }
+#desktop { display: inline;}
+/*Configure the Tablet CSS with the following style rules*/
+@media only screen and (max-width: 1024px) {
+	body {margin: 0; padding: 0; background-image: none; }
+	#wrapper {width: auto; min-width: 0; margin: 0; box-shadow: none; }
+	h1 {margin: 0;}
+	nav {float: none; width: auto; padding: 0.5em; }
+	nav li {display: inline-block}
+	nav a {padding: 1em; }
+	main {padding: 1em; margin-left: 0; font-size: 90%;}
+	footer {margin: 0; }
+	#homehero {margin-left: 0; }
+	#interiorhero {margin-left: 0; }
+	#exteriorhero {margin-left: 0; }
+	#restorationhero {margin-left: 0; }
+	#roofinghero {margin-left: 0; }
+	#contacthero {margin-left: 0; }
+}
+/*Configure the table. Code a new style rule for the table element selector*/
+#d{margin:0;}
+table {border: 1px solid #3399cc; width: 90%; border-collapse: collapse; }
+/*Configure the table cell*/
+td, th { padding: 5px; border: 1px solid #3399cc; }
+/*Configure the td element*/
+td {text-align: center; }
+/*Configure the table text*/
+text {text-align: center; }
+/*Configure alternate-row background color*/
+tr:nth-of-type(even) {background-color: #F5FAFC; }
+label {float: left; display: block; width: 8em; padding-right: 1em; }
+input {display: block; margin-bottom: 1em; }
+textarea {display: block; margin-bottom: 1em; }
+#mySubmit {margin-left: 10em; }
+/*Configure the Smartphone CSS creating the mobile style sheet based on the desktop style sheet.*/
+/*Note that any device with a screen max-width of 1024 pixals or less will apply the styles.*/
+@media only all and (max-width: 768px) {
+	h1 { height: 100%; font-size: 1.5em; padding-left: 0.3em; }
+	nav {padding: 0; }
+	nav a {display: block; padding: 0.2em; font-size: 1.3em; border-bottom: 1px; border-bottom-color: #330000; }
+	nav ul {margin: 0; Padding: 0; }
+	nav li {display: block; margin: 0; Padding: 0; }
+	main { padding-top: 0.1em; padding-right: 0.6em; padding-bottom: 0.1em; padding-left: 0.4em; }
+	footer {padding: 0;}
+	#homehero {display: none; }
+	#yurthero {display: none; }
+	#trailhero {display: none; }
+	#Waterfronthero {display: none: }
+	#mobile {display: inline; }
+	#desktop {display: none; }

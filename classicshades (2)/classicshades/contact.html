@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- The head section contains information that describes the web page document-->
+<head>
+<!--Anisia Whiting
+	CIS 133DA Section 26860
+	September 25, 2017-->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- The title element configures the text that will appear in the title barof the browser window-->
+<title>Classic Shades Painting: Contact Us</title>
+<!-- The meta link describes a characteristic of a web page, such as the character encoding-->
+<meta charset="utf-8">
+<!-- Configure a viewpoint meta tag that configures the width to divice-width and sets the intial-scale to 1.0-->
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<!--The link element associates an external style sheet with a web page-->
+<link rel="stylesheet" href="classicshades.css">
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+  </head> 
+</head>
+<body>
+<div id="wrapper">
+<!-- THe heading element are organized into 6 levels: h1 through h6-->
+<header>
+<h1>Contact Us 602-475-7106/480-254-3372</h1>
+</header>
+<!-- The nav element is used to contain a section of navigation links-->
+<nav>
+	<!-- An unordered list displays a bullet, or list marker, before eah entry in the list-->
+	<ul>
+		<a href="index.html">Home</a> &nbsp; 
+		<a href="interior.html">Interior Painting</a> &nbsp;
+		<a href="exterior.html">Exterior Painting</a> &nbsp;
+		<a href="restoration.html">Water Damage & Restoration</a> &nbsp;	
+		<a href="roofing.html">Roof Repair</a> &nbsp;
+		<a href="contact.html">Contact Us</a>
+	</ul>
+</nav>
+<!-- A div element has been used to configure a generic structural area or "division" on a web page as a block display with empty space above and below-->
+<div id="contacthero"></div>
+<!-- The main element is to contain the main content of the web page-->
+<main>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+<div style='overflow:hidden;height:340px;width:600px;float:right; padding-top: 20px;'>
+<div id='gmap_canvas' style='height:340px;width:600px; float:right; padding-top: 20px;'>
+</div><div><small><a href="https://embedgooglemaps.com/en/">embedgooglemaps.com/</a></small></div><div><small><a href="https://promocode.com.ph/hotels-com/">https://promocode.com.ph/hotels-com/</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(33.4465324,-111.8107645),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(33.4465324,-111.8107645)});infowindow = new google.maps.InfoWindow({content:'<strong>Classic Shades Painting</strong><br>1732 N Fraser Dr. Mesa, AZ<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+	<h2>Contact Us</h2>
+	<P>Required information is marked with an asterisk (*).</P>
+	<form method="post"
+	action="http://webdevbasics.net/scripts/pacific.php">
+	<!--configure the form control for the First Name-->
+	<label for="myFName">*First Name:</label>
+	<input type="text" name="myFName" id="myFName" required="required" placeholder="Your First Name">
+	<!--configure the form control for the Last Name-->
+	<label for="myLName">*Last Name:</label> 
+	<input type="text" name="myLName" id="myLName" required="required" placeholder="your Last Name">
+	<!--configure the form control for the Email address-->
+	<label for="myEmail">*Email:</label>
+	<input type="Email" name="myEmail" id="myEmail" required="required" placeholder="your Email Address">
+	<!--configure the form control for the Phone Number-->
+	<label for="myPhone">*Phone:</label>
+	<input type="tel" name="myPhone" id="myPhone">
+	<!--configure the form control for Comments-->
+	<label for="myComments">*Comments:</label>
+	<textarea name="myComments" id="myComments" rows="2" cols="20" required="required"></textarea>
+	<input id="mySubmit" type="Submit" value="Submit">
+	</form>
+</main>
+<!-- The footer element is to contain the footer content or section of a web page--> 
+	<footer>
+		Copyright &copy; 2017 Classic Shades Painting<br>
+		<a href="classicshadespainting.com">www.classicshadespainting.com</a>
+	</footer>
+	</div>
+	</body>
+	
+	
